@@ -11,6 +11,7 @@ public class PayoffApp {
         // Make an empty arraylist to hold aprs
         // double[] aprs = new double[5];
         List<Double> aprs = new ArrayList<>();
+        List<CreditCard> cards = new ArrayList<>();
 
         while (scan.hasNextLine()) {
             String name = scan.nextLine();
@@ -29,9 +30,8 @@ public class PayoffApp {
             // String balanceString = String.format("$%.2f", balance);
             // System.out.println(name + ": " + "APR: " + aprString
             //         + " Balance: " + balanceString);
-
             CreditCard card = new CreditCard(name, apr, balance);
-            System.out.println(card);
+            cards.add(card);
         }
 
         // sort arraylist
@@ -39,5 +39,11 @@ public class PayoffApp {
 
         // print arraylist
         System.out.println(aprs);
+        System.out.println(cards);
+        
+        // print credit cards
+        for (CreditCard card : cards) {
+            System.out.println(card);
+        }
     }
 }
