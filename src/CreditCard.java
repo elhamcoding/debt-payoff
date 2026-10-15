@@ -55,4 +55,8 @@ public double monthlyInterest() {
     return monthlyRate * balance;
 }
 
+public void accrueInterest() {
+    balance += monthlyInterest();
+}
+
 }

@@ -49,5 +49,10 @@ public class PayoffApp {
         CreditCard costco = new CreditCard("Costco", 20.33, 300);
         System.out.println(costco.monthlyInterest()); 
 
-    }
+        for (int i = 0; i < 12; i++) {
+        costco.accrueInterest();
+        }
+
+        System.out.println(costco.getBalance()); 
+ }
 }
