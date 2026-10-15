@@ -39,8 +39,9 @@ public class PayoffApp {
 
         // print arraylist
         System.out.println(aprs);
+        Collections.sort(cards, Comparator.reverseOrder());
         System.out.println(cards);
-        
+
         // print credit cards
         for (CreditCard card : cards) {
             System.out.println(card);
