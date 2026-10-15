@@ -46,5 +46,8 @@ public class PayoffApp {
         for (CreditCard card : cards) {
             System.out.println(card);
         }
+        CreditCard costco = new CreditCard("Costco", 20.33, 300);
+        System.out.println(costco.monthlyInterest()); 
+
     }
 }

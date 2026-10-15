@@ -50,4 +50,9 @@ public int compareTo(CreditCard other) {
     return 1;
 }
 
+public double monthlyInterest() {
+    double monthlyRate = apr / 12 / 100;
+    return monthlyRate * balance;
+}
+
 }
